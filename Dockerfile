@@ -5,10 +5,10 @@ FROM scratch
 WORKDIR /app
 
 # 拷贝配置文件
-COPY ./config/* ./config
+COPY ./config/* ./app/config
 
 # 拷贝编译程序
-COPY go_log_server .
+COPY go_log_server ./app/
 
 # 打开8080端口
 EXPOSE 8080
