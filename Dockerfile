@@ -10,7 +10,7 @@ COPY ./config/* ./app/config
 # 拷贝编译程序
 COPY go_log_server ./app/
 
-RUN chmod +x /app/go_log_server
+RUN chmod +x ./app/go_log_server
 
 # 打开8080端口
 EXPOSE 8080
