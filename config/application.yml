@@ -1,0 +1,10 @@
+server:
+  port: 8080
+mysql:
+  host: mysql_5.7
+  port: 3306
+  database: go_log_service
+  username: root
+  password: root
+  charset: utf8
+  maxQueryNumber: 1000
