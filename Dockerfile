@@ -5,7 +5,7 @@ FROM scratch
 WORKDIR /app
 
 # 拷贝配置文件
-COPY configl ./config
+COPY ./config/* ./config
 
 # 拷贝编译程序
 COPY go_log_server .
